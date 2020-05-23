@@ -87,9 +87,14 @@ html {
   grid-area: 2 / 2 / 6 / 5; }
 
 .gallery_page {
-  margin: 0;
+  justify-items: center;
+  margin-top: 50px;
   height: 150vh;
   width: 100vw; }
+
+.gallery_title {
+  text-align: center;
+  font-size: 60px; }
 
 .gallery_img {
   width: 300px;
