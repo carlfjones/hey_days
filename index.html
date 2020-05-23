@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hey Days</title>
+    <link rel="stylesheet" href="./node_modules/lightbox2/src/css/lightbox.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <div id="navbar" class="navbar">
         <a href="#" class="nav_link">Home</a>
         <a href="#about_page" class="nav_link">About</a>
-        <a href=""  class="nav_link">Gallery</a>
+        <a href="#gallery_page"  class="nav_link">Gallery</a>
         <a href=""  class="nav_link">Shop</a>
     </div>
 
@@ -23,8 +24,8 @@
     </section>
 
     <section id="about_page" class="about_page">
-        <div class="about_title" data-aos="fade-right">About Me</div>
-        <p class="text" data-aos="fade-right">Hi, welcome to Hey Days furniture!<br><br>
+        <div class="about_title" data-aos="fade-right" data-aos-duration='2000'>About Me</div>
+        <p class="text" data-aos="fade-right" data-aos-duration='2000'>Hi, welcome to Hey Days furniture!<br><br>
             I’m a London girl who did the big sell up and moved to the seaside in 2014. I fell in love instantly with windy walks on the beach, the ever changing sea and the outdoor life.<br><br>
             
             Having bought a ‘doer upper’ and with very few funds, I learnt a vast range of DIY and handyperson skills very quickly. I sourced second-hand furniture and repaired, renovated and painted it to furnish my home. The results were quirky one-off pieces that brought real character to the rooms and became great talking points when people came to visit.<br><br>
@@ -34,13 +35,42 @@
             This ignited a passion to save furniture from being destroyed and turn it instead into something beautiful to be used and adored. I love taking previously tired and unwanted furniture, updating it and seeing it proudly displayed and treasured again in someone’s home.<br><br>
             
             I specialise in creating beautiful, affordable on-off pieces because every room deserves to be made a little special doesn’t it? All my furniture is given the hey-days treatment in my little studio by the sea and sent out into the world via my Etsy shop or locally on Facebook.</p>
-        <div id="about_img" data-aos="fade-left"></div>
+        <div id="about_img" data-aos="fade-left" data-aos-duration='2000'></div>
+        <div id="about_img2"></div>
 
     </section>
+
+<section id="gallery_page" class="gallery_page">
+
+    <div class="gallery">
+        <a href="./assets/imgs/Gallery/lightbox_imgs/1big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/1small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/2big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/2small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/3big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/3small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/4big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/4small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/5big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/5small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/6big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/6small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/7big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/7small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/8big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/8small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/9big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/9small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/10big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/10small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/11big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/11small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/12big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/12small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/13big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/13small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/14big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/14small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/15big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/15small.jpg" class="gallery_img"></a>
+        <a href="./assets/imgs/Gallery/lightbox_imgs/16big.jpg" data-lightbox="mygallery"><img src="./assets/imgs/Gallery/lightbox_imgs/16small.jpg" class="gallery_img"></a>
+    </div>
+
+
+</section>
+<!-- Lightbox library -->
+<script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+<!-- Aos library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+<!-- main.js -->
     <script src="./assets/js/main.js"></script>
 </body>
 
