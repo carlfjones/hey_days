@@ -160,7 +160,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
+    height: auto;
     width: auto;
 }
 
@@ -172,7 +172,32 @@ html {
 }
 
 .input {
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    border-radius: 15px;
     width: 30vw;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    box-shadow: 1px 1px 2px;
+}
+
+input {
+    border: none;
+    box-shadow: 1px 1px 2px;
+}
+
+.submit {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    border: none;
+    justify-self: center;
+    padding: 10px;
+    background: rgb(187, 219, 247);
+    border-radius: 15px;
 }
 
 // Social Media
@@ -187,7 +212,7 @@ html {
 }
 
 .icon {
-    width: 10vw;
+    width: 5vw;
     height: auto;
     margin: 50px;
 }  
@@ -201,8 +226,10 @@ html {
     box-shadow: 5px 5px 10px rgb(10, 10, 10);
     margin-left: 100px;
 
-    a:active {
-        background: rgb(153, 153, 153);
-    }
 
 }
+
+#etsyicon {
+    width: 8vw;
+}
+
