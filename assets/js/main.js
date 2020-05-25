@@ -12,3 +12,5 @@ function navbarSticky() {
     }
 };
 
+// Form validation
+
