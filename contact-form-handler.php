@@ -45,3 +45,4 @@ mail($to,$email_subject,$email_body,$headers);
 header('Location: contact-form-thank-you.html');
 
 }
+?>
