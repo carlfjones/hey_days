@@ -211,7 +211,7 @@ a {
       background-position: bottom;
       background-repeat: no-repeat;
       width: 100vw;
-      height: 20vh; } }
+      height: 30vh; } }
 
 .text {
   padding-bottom: 30px;
@@ -355,10 +355,11 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
   width: 50vw;
   border-radius: 50px;
-  background: #f6e3d4; }
+  background: #f6e3d4;
+  padding: 20px; }
 
 .thank_title {
   font-family: 'Playfair Display', serif;
@@ -366,9 +367,19 @@ input {
   font-size: 60px;
   text-align: center;
   padding-bottom: 50px; }
+  @media only screen and (max-width: 992px) {
+    .thank_title {
+      font-size: 40px; } }
+  @media only screen and (max-width: 768px) {
+    .thank_title {
+      font-size: 28px; } }
 
 .thank_content {
   font-family: 'Quicksand', sans-serif; }
+  @media only screen and (max-width: 768px) {
+    .thank_content {
+      text-align: center;
+      font-size: 15px; } }
 
 .thank_home {
   text-decoration: none;
