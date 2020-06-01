@@ -239,6 +239,18 @@ a {
     height: auto;
     width: 100vw;
     background-color: #f6e3d4;
+
+    @media only screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        p {
+            padding: 50px;
+        }
+     }
+     @media only screen and (max-width: 768px) {
+         font-size: 12px;
+      }
+    
 }
 
 .about_title {
@@ -251,18 +263,38 @@ a {
     justify-content: center;
     font-size: 50px;
     font-weight: 700;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 40px;
+     }
+     @media only screen and (max-width: 768px) {
+         font-size: 28px;
+      }
 }
 
 #about_img {
     background-image: url("../imgs/About/aboutimg.jpg");
     background-size: cover;
     grid-area: 1 / 5 / 6 / 8;
+    @media only screen and (max-width: 992px) {
+        display: none;
+     }
+    
 }
 #about_img2 {
     background-image: url("../imgs/paintbrushes.png");
     background-size: cover;
     background-position: right;
     grid-area: 5 / 1 / 6 / 2;
+
+
+    @media only screen and (max-width: 992px) {
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 20vh;
+     }
 }
 
 .text {
@@ -294,6 +326,12 @@ a {
     font-weight: 700;
     text-align: center;
     font-size: 50px;
+    @media only screen and (max-width: 992px) {
+        font-size: 40px;
+     }
+     @media only screen and (max-width: 768px) {
+         font-size: 28px;
+      }
 }
 
 .gallery_img {
@@ -319,6 +357,13 @@ a {
     width: 100vw;
     background-image: url("../imgs/Contact/beach.jpg");
     background-size: cover;
+    @media only screen and (max-width: 992px) {
+        flex-direction: column;
+        height: auto;
+     }
+     @media only screen and (max-width: 768px) {
+        //  font-size: 28px;
+      }
 }
 
 
@@ -333,6 +378,7 @@ a {
     align-items: center;
     height: auto;
     width: auto;
+    
 }
 
 .contact_title {
@@ -347,7 +393,13 @@ a {
     font-family: 'Quicksand', sans-serif;
     font-size: 15px;
     border-radius: 15px;
-    width: 30vw;
+    width: 30vw; 
+    @media only screen and (max-width: 992px) {
+        width: 50vw;
+     }
+     @media only screen and (max-width: 768px) {
+        //  font-size: 28px;
+      }
 }
 
 textarea {
@@ -380,12 +432,21 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (max-width: 992px) {
+        flex-direction: row;
+        height: auto;
+     }
+
 }
 
 .icon {
     width: 5vw;
     height: auto;
     margin: 50px;
+    @media only screen and (max-width: 992px) {
+        width: 7vw;
+        margin: 30px;
+     }
 }  
 
 .etsy {
@@ -397,11 +458,24 @@ input {
     box-shadow: 5px 5px 10px rgb(10, 10, 10);
     margin-left: 100px;
 
+    @media only screen and (max-width: 992px) {
+        margin: 50px;
+     }
+     @media only screen and (max-width: 768px) {
+        // width: 18vw;
+      }
+
 
 }
 
 #etsyicon {
     width: 8vw;
+    @media only screen and (max-width: 992px) {
+        width: 12vw;
+     }
+     @media only screen and (max-width: 768px) {
+        width: 20vw;
+      }
 }
 
 

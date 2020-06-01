@@ -1,17 +1,17 @@
+$('#contact_form').validate();
 
+// window.onscroll = function() {navbarSticky()};
 
-window.onscroll = function() {navbarSticky()};
+// var navbar = document.getElementById('navbar');
+// var sticky = navbar.offsetTop;
 
-var navbar = document.getElementById('navbar');
-var sticky = navbar.offsetTop;
-
-function navbarSticky() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
-};
+// function navbarSticky() {
+//     if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky");
+//     } else {
+//         navbar.classList.remove("sticky");
+//     }
+// };
 
 // Navbar hamburger toggle 
 
@@ -26,7 +26,7 @@ function navbarSticky() {
 
 // Form validation
 
-$('#contact_form').validate();
+
 
 
 
