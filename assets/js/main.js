@@ -13,10 +13,21 @@ function navbarSticky() {
     }
 };
 
+// Navbar hamburger toggle 
+
+// function navToggle() {
+//     var x = document.getElementById('navbar');
+//     if (x.className === "topnav") {
+//       x.className += "responsive";
+//     } else {
+//       x.className = "topnav";
+//     }
+//   } 
+
 // Form validation
 
-var frmvalidator = new Validator('contact_form'); 
-frmvalidator.addValidation('name','req','Please provide your name'); 
-frmvalidator.addValidation('email','req','Please provide your email'); 
-frmvalidator.addValidation('email','email', 'Please enter a valid email address');
+$('#contact_form').validate();
+
+
+
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hey Days</title>
-    <?php include('contact-form-handler.php'); ?>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/lightbox2/src/css/lightbox.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -14,12 +13,24 @@
 
 </head>
 <body>
-    <div id="navbar" class="navbar">
+    <header class="header">
+
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about_page">About</a></li>
+          <li><a href="#gallery_page">Gallery</a></li>
+          <li><a href="#contact">Shop & Connect</a></li>
+        </ul>
+      </header>
+
+    <!-- <div id="navbar" class="topnav">
         <a href="#" class="nav_link">Home</a>
         <a href="#about_page" class="nav_link">About</a>
         <a href="#gallery_page"  class="nav_link">Gallery</a>
         <a href="#contact"  class="nav_link">Shop & Connect</a>
-    </div>
+    </div> -->
 
     <section class="landing_page">
         <div class="logo2"></div>
@@ -79,10 +90,10 @@
 
             <form action="mail.php" method="post" id ="contact_form" name="contact_form" >
                 Your Name:<br><br>
-                <input type="text" placeholder="Jo Blogs" name="name" class="input"><br><br>
+                <input type="text" placeholder="Jo Blogs" name="name" class="input" minlength="2" required><br><br>
 
                 Email Address:<br><br>
-                <input type="text" placeholder="joblogs@ilikefurniture.com" name="email" class="input"><br><br>
+                <input placeholder="joblogs@ilikefurniture.com" type="email" name="email" class="input" required><br><br>
 
                 Message:<br><br>
                 <textarea placeholder="I love furniture!" name="message" class="input"></textarea><br><br>

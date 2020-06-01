@@ -10,29 +10,166 @@ html {
 
 // Landing Page
 
-#navbar {
-    z-index: 999;
-    position: fixed;
-    display: flex;
-    overflow: hidden;
-    width: 100vw;
-    height: 40px;
-    background-color: rgb(20, 20, 20);
-    justify-content: center;
-    align-items: center;
-}
 
-.nav_link {
-    font-weight: 300;
-    font-size: 16px;
-    float: left;
+a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
     display: block;
-    color: #f9D199;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
     text-decoration: none;
-}
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 992px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+  
+
+
+
+
+
+// .topnav {
+//     z-index: 999;
+//     position: fixed;
+//     display: flex;
+//     overflow: hidden;
+//     width: 100vw;
+//     height: 40px;
+//     background-color: rgb(20, 20, 20);
+//     justify-content: center;
+//     align-items: center;
+// }
+
+
+// .nav_link {
+//     font-weight: 300;
+//     font-size: 16px;
+//     float: left;
+//     display: block;
+//     color: #f9D199;
+//     padding-left: 50px;
+//     padding-right: 50px;
+//     text-align: center;
+//     text-decoration: none;
+// }
+
+
+
 
 .landing_page {
     display: flex;
@@ -43,7 +180,7 @@ html {
     width: 100vw;
     background-image: url("../imgs/homephoto2.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 
 }
 
@@ -53,6 +190,15 @@ html {
     color: #f9D199;
     height: 350px;
     width: 400px;
+
+    @media only screen and (max-width: 992px) {
+        height: 250px;
+        width: 200px;
+    }
+    @media only screen and (max-width: 768px) {
+        height: 150px;
+        width: 150px;
+     }
 }
 
 .logo {
@@ -68,6 +214,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 992px) {
+       font-size: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 30px;
+     }
 }
 
 .sticky {
